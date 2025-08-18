@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(methodOverride('_method'));     
 
 // ======= MongoDB Connection =======
-mongoose.connect('mongodb://127.0.0.1:27017/reactville') 
+mongoose.connect('mongodb://127.0.0.1:27017/jukebox') 
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
