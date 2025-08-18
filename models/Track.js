@@ -8,11 +8,10 @@ const trackSchema = new mongoose.Schema({
   artist: {
     type: String,
     required: true
+  },
+  album: {
+    type: String
   }
-});
+}, { timestamps: true });
 
-const Track = mongoose.model('Track', trackSchema);
-
-module.exports = Track;
-
-
+module.exports = mongoose.model('Track', trackSchema);
